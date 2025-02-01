@@ -26,9 +26,10 @@
    git clone https://github.com/biguxuzz/telegram-quiz-bot.git
    cd telegram-quiz-bot
    ```
-2. Create a `.env` file and set the required environment variables (e.g., bot API key, database credentials, etc.).
-3. Start the containers:
+2. Start the containers:
    ```bash
+   cp .env.dist .env
+   nano .env # set the required environment variables (e.g., bot API key, database credentials, etc.)
    docker-compose up -d
    ```
 
@@ -74,9 +75,10 @@ This project is licensed under the **AGPL-3.0**. See [`LICENSE`](LICENSE) for de
    git clone https://github.com/biguxuzz/telegram-quiz-bot.git
    cd telegram-quiz-bot
    ```
-2. Создайте `.env` файл и укажите необходимые переменные окружения (например, API-ключ бота, данные для БД и т. д.).
-3. Запустите контейнеры:
+2. Запустите контейнеры:
    ```bash
+   cp .env.dist .env
+   nano .env # укажите необходимые переменные окружения (например, API-ключ бота, данные для БД и т. д.)
    docker-compose up -d
    ```
 
